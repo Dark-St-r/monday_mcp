@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "monday-api-mcp-hosted-dev": {
+      "command": "npx",
+      "args": [
+        "-p",
+        "node@20",
+        "mcp-remote",
+        "https://mcp.monday.com/sse",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Bearer <your_token>"
+      }
+    }
+  }
+}
